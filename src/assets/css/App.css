@@ -1,0 +1,348 @@
+body {
+    margin: 0;
+}
+#app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    background-color:rgb(231, 245, 245);
+}
+
+.view-tabs {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+
+}
+
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: calc(37% - 25px);
+    box-sizing: border-box;
+}
+
+.card-left {
+    margin-right: 20px;
+    background-color: white;
+}
+
+.card-right {
+    padding-left: 20px;
+    margin-left: 20px;
+    background-color: white;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 38px;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+.card-title-2 {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(16, 16, 126);
+    text-align: left;
+}
+
+.subtitulo {
+    font-size: 15px;
+    text-align: left;
+    margin-top: -8px;
+}
+
+.card-image {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    color: #333;
+    font-size: 16px;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.next-button {
+    background-color: rgb(90, 90, 238);
+    color: white;
+    padding: 14px 44px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
+.next-button:hover {
+    background-color: #0042a2;
+}
+
+.question-icon {
+    cursor: pointer;
+    color: blue;
+    font-size: 14px;
+}
+
+.question-icon:hover {
+    color: #0042a2;
+}
+
+.text-input {
+    font-size: 14px;
+}
+
+.centered-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-input {
+    align-items: center;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.file-input label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.file-input i {
+    font-size: 32px;
+    color: blue;
+}
+
+.file-input:hover {
+    border-color: #0042a2;
+}
+
+.file-input-2 {
+    align-items: center;
+    padding: 20px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.file-input-2 label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.file-input-2 i {
+    font-size: 20px;
+    color: blue;
+}
+
+.file-input-2:hover {
+    border-color: #0042a2;
+}
+
+.uploaded-files ul {
+    list-style: none;
+    padding: 0;
+}
+
+.uploaded-files li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.uploaded-files button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+}
+
+.vertical-bar {
+    border-left: 1px solid #ccc;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.uploaded-files .row {
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.horizontal-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.horizontal-col {
+    display: flex;
+    align-items: center;
+}
+
+.uploaded-files button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: red;
+}
+
+.bordered-box {
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+}
+
+.text-anadir {
+    font-size: 10px;
+    font-weight: bold;
+    color: #0042a2;
+}
+
+.filename-col {
+    flex: 1;
+    text-align: center;
+}
+
+.delete-col {
+    margin-left: auto;
+}
+
+.backgroundFile {
+    background-color: rgb(225, 238, 238);
+}
+
+.card-mobile {
+    display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: calc(37% - -70px);
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 1280px) {
+    .card {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: calc(37% - -10px);
+        box-sizing: border-box;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        /* Cambia la dirección del flex a columna */
+        align-items: center;
+        /* Centra las cards verticalmente */
+    }
+
+    .card {
+        width: 100%;
+        /* Ocupa todo el ancho disponible */
+        margin-bottom: 20px;
+        /* Espacio entre las cards */
+    }
+
+    .responsive-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-image {
+        width: 40%;
+        margin-left: 30%;
+        /* Ocupa la mitad del ancho disponible */
+    }
+
+    .card-text {
+        width: 50%;
+        /* Ocupa la otra mitad del ancho disponible */
+        padding: 0 10px;
+        /* Espacio entre la imagen y el texto */
+    }
+
+    .card-description {
+        display: none;
+        /* Oculta el texto de descripción en dispositivos móviles */
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 16px;
+        color: blue;
+        margin-bottom: 10px;
+    }
+
+    .card-laptop {
+        display: none;
+    }
+
+    .card-mobile {
+        display: flex;
+        align-items: center;
+    }
+
+    .card-left {
+        margin-right: 0
+    }
+
+    .card-right {
+        margin-left: 0
+    }
+
+    .file-input {
+        margin-right: 15px;
+    }
+}
